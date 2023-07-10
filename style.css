@@ -1,0 +1,205 @@
+body{
+    background-color: rgb(15, 9, 1);
+    margin: 0px;
+    padding: 0px;
+}
+
+.whole{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+
+
+.HOME{
+    margin: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 7px;
+    height: 30vh;
+    flex: 1;
+}
+.library{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 7px;
+    height: 55vh;
+    flex-shrink: 0; 
+    padding: 5px;  
+}
+.lib-songs{
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+.lib-songs::-webkit-scrollbar {
+    display: none;
+}
+.lib-songs {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.lib-songs-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.song-name-list{   
+    flex-basis: 90%;
+    text-align: center;     
+}
+.play-button{
+    flex-basis: 20%;
+}
+.play-buttones{
+    height: 1rem;
+}
+.NameofSong{
+    margin-bottom: 0px;
+    font-size: smaller;
+}
+
+.left-bar{
+    display: inline-flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+.right-bar{
+    height: 97%;
+    margin: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border-radius: 7px;
+    position: relative;
+    flex: 1;
+    
+}
+
+.right-top-bg{
+    height: 200px;
+    width: 100%;
+    margin: 0px;
+    border-radius: 7px;
+    
+    position: absolute;
+    
+    object-fit: cover;
+    
+    transform: scaleX(-1);
+    
+    
+}
+#gif{
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .right-bar-top>div{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        right: 12vh;
+        top: 1vh;
+    }
+    .right-top-card{
+        height: 75px;
+        width: 75px;
+    }
+}
+
+.right-bar-top>div{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    right: 12vh;
+    top: 6vh;
+}
+.right-top-card{
+    height: 100px;
+    width: 100px;
+}
+.curr-playing{
+    font-size: x-small;  
+    text-align: center;
+}
+#current-song{
+    font-size: large;  
+}
+.right-bar-bottom{
+    position: relative;
+    top: 36%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.right-bar-bottom-content{
+    display: flex;
+    margin: 2vh;
+    gap: 10px;
+}
+.right-bar-bottom-songs{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+.right-bar-bottom-content-group{
+    display: flex;
+    height: 45vh;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.right-bar-bottom-content-group::-webkit-scrollbar {
+    display: none;
+}
+.right-bar-bottom-content-group {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.buttom{
+    display: block;
+    color: white;
+    height: 100%;
+    margin-top: 5px;
+}
+
+.bottom-list{
+    display: flex;
+    gap: 15px;
+}
+.bottom-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+}
+.play-buttons{
+    cursor: pointer;
+    height: 1.5rem;
+}
+#progressBar{
+    width: 80%;
+}
+#progressBarGrid{
+    width: 100%;
+    cursor: pointer;
+}
+
+p{
+    margin: 0px;
+}
